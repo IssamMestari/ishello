@@ -8,6 +8,6 @@ node{
         sh "cd ishello && javac Main.java"
     }
     stage('test'){
-        sh "java Main"
+        sh "cd ishello && java Main"
     }
 }
