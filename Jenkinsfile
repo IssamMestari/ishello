@@ -1,5 +1,6 @@
 node{
     stage('clone'){
+        sh "rm -rf *"
         sh "git clone https://github.com/IssamMestari/ishello.git"
     }
     stage('build'){
